@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+pyninja/__init__.py
+pyninja/cli.py
+pyninja/main.py
+pyninja.egg-info/PKG-INFO
+pyninja.egg-info/SOURCES.txt
+pyninja.egg-info/dependency_links.txt
+pyninja.egg-info/entry_points.txt
+pyninja.egg-info/not-zip-safe
+pyninja.egg-info/requires.txt
+pyninja.egg-info/top_level.txt

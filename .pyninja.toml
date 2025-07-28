@@ -1,0 +1,56 @@
+# PyNinja Configuration File
+# This file contains default settings for PyNinja operations
+
+[pyninja]
+# Security settings
+security_first = true
+strict_compatibility = false
+vulnerability_db = "osv"
+
+# Modernization settings
+modernize = true
+performance_focus = false
+
+# Update behavior
+auto_fix = false
+strict_mode = false
+dry_run_default = false
+
+# Python version targeting
+target_python = "3.9"
+
+# Execution settings
+timeout = 30
+max_retries = 3
+max_workers = 10
+
+# Output settings
+export_reports = true
+github_integration = true
+interactive_prompts = true
+
+# Package exclusions
+[pyninja.exclude]
+packages = [
+    # Add packages to exclude from updates
+    # "legacy-internal-tool",
+    # "custom-package"
+]
+
+# Custom alternatives mapping
+[pyninja.alternatives]
+# Define custom package alternatives
+# "old-package" = "new-package"
+# "deprecated-lib" = "modern-lib"
+
+# CI/CD integration settings
+[pyninja.ci]
+enable_github_actions = true
+auto_create_prs = false
+pr_branch_prefix = "pyninja-update"
+
+# Logging configuration
+[pyninja.logging]
+level = "INFO"
+file_logging = true
+rich_output = true
